@@ -21,7 +21,7 @@ for (let i = 0; i < 10; i++) {
 
         //Se uno dei valori non è un numero viene inserito in un altro array
         stringArray.push(userValue)
-
+        alert(`Attenzione, il valore "${userValue}" non è un numero e non verrà sommato!`)
 
     }
 
