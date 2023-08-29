@@ -7,6 +7,8 @@ let sum = 0;
 
 const resulEl = document.querySelector("h1");
 
+const numList = document.querySelector("h2");
+
 for (let i = 0; i < 10; i++) {
     const userValue = Number(prompt("inserisci un numeri", `${i +  1}`));
 
@@ -20,4 +22,6 @@ console.log(numArray);
 
 console.log(sum);
 
-resulEl.innerHTML = `La somma dei valori inseriti è ${sum}`;
+resulEl.innerHTML = `La somma dei valori inseriti è ${sum}.`;
+
+numList.innerHTML = `Ecco l'elenco dei valori inseriti: ${numArray.join(", ")}.`;
