@@ -15,7 +15,7 @@ const stringList = document.querySelector("h3");
 
 for (let i = 0; i < 10; i++) {
 
-    const userValue = prompt("inserisci un numero", `${i + 1}`);
+    const userValue = prompt("Inserisci un numero", `${i + 1}`);
 
     if (isNaN(userValue)) {
 

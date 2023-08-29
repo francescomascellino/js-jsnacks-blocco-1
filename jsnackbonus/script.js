@@ -12,7 +12,7 @@ const stringList = document.querySelector("h2");
 
 for (let i = 0; i < 6; i++) {
 
-    const userValue = prompt("inserisci un numero", `${i + 1}`);
+    const userValue = prompt("Inserisci un numero", `${i + 1}`);
 
     if (isNaN(userValue)) {
 
