@@ -5,6 +5,8 @@ const numArray = [];
 
 let sum = 0;
 
+let NanCheck = false;
+
 const resulEl = document.querySelector("h1");
 
 const numList = document.querySelector("h2");
@@ -13,11 +15,19 @@ for (let i = 0; i < 10; i++) {
     const userValue = prompt("inserisci un numero", `${i +  1}`);
 
     if (isNaN(userValue)) {
-        resulEl.innerHTML = "Uno dei valori inseriti non è un numero"
-    } else {
-    numArray.push(userValue);
 
-    sum += Number(numArray[i]);        
+        //Se uno dei valori non è un numero interrompe il codice
+        NanCheck = true;
+
+        break;
+
+    }
+
+    else {
+        numArray.push(userValue);
+
+        sum += Number(numArray[i]);
+
     }
 
 }
@@ -26,6 +36,15 @@ console.log(numArray);
 
 console.log(sum);
 
-resulEl.innerHTML = `La somma dei valori inseriti è ${sum}.`;
+if (NanCheck) {
 
-numList.innerHTML = `Ecco l'elenco dei valori inseriti: ${numArray.join(", ")}.`;
+    resulEl.innerHTML = "Uno dei valori inseriti non è un numero";
+
+} else {
+
+    resulEl.innerHTML = `La somma dei valori inseriti è ${sum}.`;
+
+    numList.innerHTML = `Ecco l'elenco dei valori inseriti: ${numArray.join(", ")}.`;
+
+}
+

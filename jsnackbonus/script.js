@@ -4,18 +4,25 @@ se è dispari inseriscilo nell’array. */
 
 const numArray = [];
 
+let NanCheck = false;
+
 const numList = document.querySelector("h1");
 
 for (let i = 0; i < 6; i++) {
-    const userValue = prompt("inserisci un numero", `${i +  1}`);
+    const userValue = Number(prompt("inserisci un numero", `${i +  1}`));
 
     if (isNaN(userValue)) {
 
-        numList.innerHTML = "Uno dei valori inseriti non è un numero";
+        //Se uno dei valori non è un numero interrompe il codice
+        NanCheck = true;
 
-    } else if (userValue % 2 !== 0) {
+        break;
 
-    numArray.push(userValue);
+    }
+
+    else if (userValue % 2 !== 0) {
+
+        numArray.push(userValue);
 
     }
 
@@ -23,4 +30,12 @@ for (let i = 0; i < 6; i++) {
 
 console.log(numArray);
 
-numList.innerHTML = `Ecco l'elenco dei valori dispari inseriti: ${numArray.join(", ")}.`;
+if (NanCheck) {
+
+    numList.innerHTML = "Uno dei valori inseriti non è un numero";
+
+} else {
+
+    numList.innerHTML = `Ecco l'elenco dei valori dispari inseriti: ${numArray.join(", ")}.`;
+
+}
