@@ -10,11 +10,15 @@ const resulEl = document.querySelector("h1");
 const numList = document.querySelector("h2");
 
 for (let i = 0; i < 10; i++) {
-    const userValue = Number(prompt("inserisci un numeri", `${i +  1}`));
+    const userValue = prompt("inserisci un numero", `${i +  1}`);
 
+    if (isNaN(userValue)) {
+        resulEl.innerHTML = "Uno dei valori inseriti non è un numero"
+    } else {
     numArray.push(userValue);
 
-    sum += Number(numArray[i]);
+    sum += Number(numArray[i]);        
+    }
 
 }
 
