@@ -9,6 +9,7 @@ let NanCheck = false;
 const numList = document.querySelector("h1");
 
 for (let i = 0; i < 6; i++) {
+
     const userValue = Number(prompt("inserisci un numero", `${i +  1}`));
 
     if (isNaN(userValue)) {

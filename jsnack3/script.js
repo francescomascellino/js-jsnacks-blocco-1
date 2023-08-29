@@ -12,6 +12,7 @@ const resulEl = document.querySelector("h1");
 const numList = document.querySelector("h2");
 
 for (let i = 0; i < 10; i++) {
+
     const userValue = prompt("inserisci un numero", `${i +  1}`);
 
     if (isNaN(userValue)) {
