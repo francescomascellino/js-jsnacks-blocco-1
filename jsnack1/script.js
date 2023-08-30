@@ -58,5 +58,10 @@ while (isNaNcheck === false) {
         resulEl.innerHTML = `${firstNum} e ${secondNum} sono uguali`
 
     }
+
+
+    isNaNcheck = true
+
+
 }
 
