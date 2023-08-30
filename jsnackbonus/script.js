@@ -21,9 +21,7 @@ while (index < 6) {
         //Se uno dei valori non è un numero viene inserito in un altro array
         stringArray.push(userValue)
 
-        index++
-
-        alert(`Attenzione, il valore "${userValue}" non è un numero e non verrà inserito in lista!`)
+        alert(`Attenzione, il valore "${userValue}" non è un numero e non verrà inserito in lista!`);
 
     }
 
@@ -31,9 +29,9 @@ while (index < 6) {
 
         numArray.push(userValue);
 
-        index++
-
     }
+
+    index++
 
 }
 
