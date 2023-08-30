@@ -13,17 +13,18 @@ while (promptCounter < 2) {
     wordsArray.push(prompt("Inserisci del testo (gli spazi verranno eliminati)", "Cane").split(" ").join(""));
     promptCounter++
 
+    console.log("Counter del prompt =", promptCounter);
+
     wordsArray.push(prompt("Inserisci altro testo (gli spazi verranno eliminati)", "Gatto").split(" ").join(""));
     promptCounter++
 
-    console.log(promptCounter);
+    console.log("Counter del prompt =", promptCounter);
 
 }
 
-
+console.log("Parole inserite =", wordsArray);
 
 const resulEl = document.querySelector("h1");
-
 
 if (wordsArray[0].length > wordsArray[1].length) {
 
