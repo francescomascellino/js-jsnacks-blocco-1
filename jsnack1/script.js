@@ -27,6 +27,7 @@ if (isNaN(secondNum)) {
 
 console.log(isNaNcheck);
 
+
 /* if (isNaNcheck === false && firstNum > secondNum) {
 
     resulEl.innerHTML = `${firstNum} è il numero maggiore`
@@ -59,9 +60,6 @@ while (isNaNcheck === false) {
 
     }
 
-
     isNaNcheck = true
 
-
 }
-
