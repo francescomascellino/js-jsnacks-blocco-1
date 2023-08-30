@@ -13,6 +13,32 @@ const numList = document.querySelector("h2");
 
 const stringList = document.querySelector("h3");
 
+let index = 0
+
+while (index < 10) {
+
+    const userValue = prompt("Inserisci un numero", `${index + 1}`);
+
+    if (isNaN(userValue)) {
+
+        //Se uno dei valori non è un numero viene inserito in un altro array
+        stringArray.push(userValue)
+        alert(`Attenzione, il valore "${userValue}" non è un numero e non verrà sommato!`)
+        index++
+
+    }
+
+    else {
+
+        numArray.push(userValue);
+        index++
+
+    }
+
+}
+
+
+/* 
 for (let i = 0; i < 10; i++) {
 
     const userValue = prompt("Inserisci un numero", `${i + 1}`);
@@ -22,16 +48,19 @@ for (let i = 0; i < 10; i++) {
         //Se uno dei valori non è un numero viene inserito in un altro array
         stringArray.push(userValue)
         alert(`Attenzione, il valore "${userValue}" non è un numero e non verrà sommato!`)
+        //index++
 
     }
 
     else {
 
         numArray.push(userValue);
+        //index++
 
     }
 
 }
+ */
 
 for (let i = 0; i < numArray.length; i++) {
 
