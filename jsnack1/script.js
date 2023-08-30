@@ -53,7 +53,7 @@ while (isNaNcheck === false) {
 
         resulEl.innerHTML = `${secondNum} è il numero maggiore`
 
-    } else if (isNaNcheck === false) {
+    } else {
 
         resulEl.innerHTML = `${firstNum} e ${secondNum} sono uguali`
 
