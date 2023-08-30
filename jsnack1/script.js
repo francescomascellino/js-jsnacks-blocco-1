@@ -27,7 +27,7 @@ if (isNaN(secondNum)) {
 
 console.log(isNaNcheck);
 
-if (isNaNcheck === false && firstNum > secondNum) {
+/* if (isNaNcheck === false && firstNum > secondNum) {
 
     resulEl.innerHTML = `${firstNum} è il numero maggiore`
 
@@ -39,5 +39,24 @@ if (isNaNcheck === false && firstNum > secondNum) {
 
     resulEl.innerHTML = `${firstNum} e ${secondNum} sono uguali`
 
+} */
+
+
+
+while (isNaNcheck === false) {
+
+    if (firstNum > secondNum) {
+
+        resulEl.innerHTML = `${firstNum} è il numero maggiore`
+
+    } else if (secondNum > firstNum) {
+
+        resulEl.innerHTML = `${secondNum} è il numero maggiore`
+
+    } else if (isNaNcheck === false) {
+
+        resulEl.innerHTML = `${firstNum} e ${secondNum} sono uguali`
+
+    }
 }
 
