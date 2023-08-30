@@ -10,6 +10,34 @@ const numList = document.querySelector("h1");
 
 const stringList = document.querySelector("h2");
 
+let index = 0
+
+while (index < 6) {
+
+    const userValue = prompt("Inserisci un numero", `${index + 1}`);
+
+    if (isNaN(userValue)) {
+
+        //Se uno dei valori non è un numero viene inserito in un altro array
+        stringArray.push(userValue)
+
+        index++
+
+        alert(`Attenzione, il valore "${userValue}" non è un numero e non verrà inserito in lista!`)
+
+    }
+
+    else if (userValue % 2 !== 0) {
+
+        numArray.push(userValue);
+
+        index++
+
+    }
+
+}
+
+/* 
 for (let i = 0; i < 6; i++) {
 
     const userValue = prompt("Inserisci un numero", `${i + 1}`);
@@ -29,6 +57,7 @@ for (let i = 0; i < 6; i++) {
     }
 
 }
+ */
 
 console.log(numArray);
 
